@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="css/gorjeta.css">
+</head>
+<body>
+<!-----
+Os itens para que devem ser listados na qualidade do serviço são: 
+Excelente – 10% 
+Ótimo – 8% 
+Bom – 5% 
+Ruim – 2% 
+O sistema deverá retornar os resultados conforme abaixo: 
+
+Você deverá utilizar funções em Javascript e desenvolver o layout conforme exemplo apresentado.
+    <h1>Restaurante S/A</h1>
+----->
+    <h1 align ="center">Restaurante S/A</h1>
+
+    <table class = "gorjeta1">
+        <tr>
+            <th>Avaliação</th>
+            <th>Valor da gorjeta</th>
+        </tr>
+        <tr>
+            <td>Excelente</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>Ótimo</td>
+            <td>8%</td>
+        </tr>
+        <tr>
+            <td>Bom</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>Ruim</td>
+            <td>2%</td>
+        </tr>
+    </table>
+
+
+    <div class="avaliacao">
+        <h2 align="center">Valor da conta</h2>
+        <h2 align = "center" class="valor"></h2>
+        <h2 align="center">Avaliação do serviço</h2>
+        <h2 align = "center" class="avaliar"></h2>
+        <button align = "center" class="calcular">Calcular</button>
+    </div>
+
+    <div class="resultadogeral">
+        <h2 align="center"><b><ins>Valor da gorjeta</ins></b></h2>
+        <h2  align="center" class="gorjeta"></h2>
+        <h2  align="center" ><b><ins>Valor total</ins></b></h2>
+        <h2  align="center" class="valortotal"></h2>
+    </div>
+
+    <script src="js/gorjeta.js"></script>
+</body>
+</html>
