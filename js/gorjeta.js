@@ -1,44 +1,57 @@
-let valorconta = document.getElementsByClassName("valor")
-let avaliacaocliente = document.getElementsByClassName("avaliar")
-let gorjeta = document.getElementsByClassName("gorjeta")
-let valortotal = document.getElementsByClassName("valortotal")
+let valorconta = document.getElementById("valor")
+let avaliacaocliente = document.getElementById("avaliar")
+let gorjeta = document.getElementById("gorjeta")
+let valortotal = document.getElementById("valortotal")
 
-let valor = 100
+let valor = 200
 let avaliacao = "Ótimo"
 let valorgorjeta
 
 if (avaliacao === "Excelente"){
     valorgorjeta = valor * 0.1
-    valorconta[0].textContent = `O valor da sua conta deu R$ ${valor}.`
-    valorconta[0].style.color = "green"
-    avaliacaocliente[0].textContent = `A avaliação do serviço foi: ${avaliacao}.`
-    avaliacaocliente[0].style.color = "green"
+    valorconta.textContent = `O valor da sua conta deu R$ ${valor}.`
+    valorconta.style.color = "green"
+    avaliacaocliente.textContent = `A avaliação do serviço foi: ${avaliacao}.`
+    avaliacaocliente.style.color = "green"
+    let resultadofinal = valor - valorgorjeta
+
+    gorjeta.textContent = `O valor da gorjeta é R$ ${valorgorjeta}`
+    valortotal.textContent = `O valor total de sua conta é R$ ${resultadofinal}`
 }
 else if(avaliacao === "Ótimo"){
     valorgorjeta = valor * 0.08
-    valorconta[0].textContent = `O valor da sua conta deu R$ ${valor}.`
-    valorconta[0].style.color = "blue"
-    avaliacaocliente[0].textContent = `A avaliação do serviço foi: ${avaliacao}.`
-    avaliacaocliente[0].style.color = "blue"
+    valorconta.textContent = `O valor da sua conta deu R$ ${valor}.`
+    valorconta.style.color = "blue"
+    avaliacaocliente.textContent = `A avaliação do serviço foi: ${avaliacao}.`
+    avaliacaocliente.style.color = "blue"
+    let resultadofinal = valor - valorgorjeta
+
+    gorjeta.textContent = `O valor da gorjeta é R$ ${valorgorjeta}`
+    valortotal.textContent = `O valor total de sua conta é R$ ${resultadofinal}`
 }
 else if(avaliacao === "Bom"){
     valorgorjeta = valor * 0.05
-    valorconta[0].textContent = `O valor da sua conta deu R$ ${valor}.`
-    valorconta[0].style.color = "orange"
-    avaliacaocliente[0].textContent = `A avaliação do serviço foi: ${avaliacao}.`
-    avaliacaocliente[0].style.color = "orange"
+    valorconta.textContent = `O valor da sua conta deu R$ ${valor}.`
+    valorconta.style.color = "orange"
+    avaliacaocliente.textContent = `A avaliação do serviço foi: ${avaliacao}.`
+    avaliacaocliente.style.color = "orange"
+    let resultadofinal = valor - valorgorjeta
+
+    gorjeta.textContent = `O valor da gorjeta é R$ ${valorgorjeta}`
+    valortotal.textContent = `O valor total de sua conta é R$ ${resultadofinal}`
 }
 else if(avaliacao === "Ruim"){
     valorgorjeta = valor * 0.02
-    valorconta[0].textContent = `O valor da sua conta deu R$ ${valor}.`
-    valorconta[0].style.color = "red"
-    avaliacaocliente[0].textContent = `A avaliação do serviço foi: ${avaliacao}.`
-    avaliacaocliente[0].style.color = "red"
+    valorconta.textContent = `O valor da sua conta deu R$ ${valor}.`
+    valorconta.style.color = "red"
+    avaliacaocliente.textContent = `A avaliação do serviço foi: ${avaliacao}.`
+    avaliacaocliente.style.color = "red"
+    let resultadofinal = valor - valorgorjeta
+
+    gorjeta.textContent = `O valor da gorjeta é R$ ${valorgorjeta}`
+    valortotal.textContent = `O valor total de sua conta é R$ ${resultadofinal}`
 }
 
 
 
-let resultadofinal = valor - valorgorjeta
 
-gorjeta[0].textContent = `O valor da gorjeta é R$ ${valorgorjeta}`
-valortotal[0].textContent = `O valor total de sua conta é R$ ${resultadofinal}`

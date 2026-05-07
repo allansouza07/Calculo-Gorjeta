@@ -4,38 +4,38 @@
     box-sizing:border-box;
 }
 body{
-    background-color: whitesmoke;
+    background-color: rgb(142, 158, 158);
 }
-.gorjeta1{
+#gorjeta1{
     position: relative;
     font-size:30px;
     margin: 0 auto;
   
 }
-.gorjeta1 th{
+#gorjeta1 th{
     border: 1px solid black;
     background-color: lightgrey;
 }
-.gorjeta1 td {
+#gorjeta1 td {
     border: 1px solid black;
     background-color: rgb(201, 191, 201);
 }
-.calcular{
+#calcular{
     position: relative;
     top: 15px;
     left: 870px;
     height:80px;
-    width:160px
+    width:160px;
 }
-.resultadogeral{
+#resultadogeral{
     position: relative;
     top:50px;
     border: 1px solid black;
     background-color: rgb(172, 192, 192);
 }
-.gorjeta{
+#gorjeta{
     color:brown
 }
-.valortotal{
+#valortotal{
     color: brown;
 }
